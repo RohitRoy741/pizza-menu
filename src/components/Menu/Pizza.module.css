@@ -14,19 +14,20 @@
 .pizza-name {
   font-size: 16px;
   margin: 10px 0;
+  margin-top: 0;
 }
 
 .pizza-ingredients {
-  font-size: 10px;
+  font-size: 12px;
   font-style: italic;
 }
 
 .pizza-price {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .sold-out-tag {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .grayed {
