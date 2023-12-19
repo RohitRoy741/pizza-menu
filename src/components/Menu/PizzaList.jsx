@@ -62,15 +62,19 @@ function PizzaList() {
     setPizzas(pizzaData);
   }, []);
 
+  if (pizzas.length === 0) {
+    return <h3>Menu is not ready yet :(</h3>;
+  }
+
   const pizzaList = pizzas.map((pizza, index) => (
-      <Pizza
-        name={pizza.name}
-        ingredients={pizza.ingredients}
-        src={pizza.src}
-        price={pizza.price}
-        soldOut={pizza.soldOut}
-        key={index}
-      />
+    <Pizza
+      name={pizza.name}
+      ingredients={pizza.ingredients}
+      src={pizza.src}
+      price={pizza.price}
+      soldOut={pizza.soldOut}
+      key={index}
+    />
   ));
 
   return <ul className={classes["pizzas"]}>{pizzaList}</ul>;
