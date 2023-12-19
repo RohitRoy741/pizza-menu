@@ -1,0 +1,32 @@
+.pizza-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: left;
+  width: 270px;
+}
+
+.pizza-description {
+  text-align: left;
+  margin: 0px 20px;
+}
+
+.pizza-name {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.pizza-ingredients {
+  font-size: 10px;
+  font-style: italic;
+}
+
+.pizza-price {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .pizza-container {
+    width: 300px;
+  }
+}
