@@ -1,7 +1,6 @@
 import classes from "./Footer.module.css";
 
 function Footer() {
-
   //Open and closing tims of the shop
   const OPEN_HOUR = 10;
   const CLOSE_HOUR = 22;
